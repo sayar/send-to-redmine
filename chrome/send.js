@@ -51,7 +51,7 @@ document.getElementById("form").onsubmit = function() {
 			'subject': subject,
 			'project_id': escape(document.getElementById("project").value),
 			'tracker_id': escape(document.getElementById("tracker").value),
-			'description': escape(document.getElementById("description").value),
+			'description': document.getElementById("description").value,
 			'status_id': escape(document.getElementById("status").value),
 			'priority': escape(document.getElementById("priority").value),
 		}
