@@ -34,7 +34,7 @@ chrome.tabs.getSelected(null,function(tab) {
 });
 
 document.getElementById("form").onsubmit = function() {
-	var subject = escape(document.getElementById("subject").value);
+	var subject = document.getElementById("subject").value;
 	var key = localStorage["api_key"];
 	var url = localStorage["api_url"];
 	if(subject === ""){
